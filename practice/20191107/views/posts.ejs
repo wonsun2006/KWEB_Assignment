@@ -1,0 +1,13 @@
+<html>
+<head></head>
+<body>
+<% if (isValid) { %>
+<h1>Requested Posts until #<%= until %></h1>
+<% for (let i = 0; i < until; i++) { %>
+<h3>Post #<%= i + 1 %></h3>
+<% } %>
+<% } else { %>
+<h1>Invalid page!</h1>
+<% } %>
+</body>
+</html>
